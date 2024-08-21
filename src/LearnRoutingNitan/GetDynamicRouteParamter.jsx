@@ -1,6 +1,6 @@
 
 import React from 'react'
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 
 // useParams()              //to get route parameter
 // useSearchParams()        //to get query parameter or search parameter
@@ -8,8 +8,7 @@ import { useNavigate, useParams, useSearchParams } from 'react-router-dom'
 
 const GetDynamicRouteParamter = () => {
     const params1 = useParams();
-    const params2 = useSearchParams();
-    const params3 = useNavigate();
+    
   return (
     <div>
       GetDynamicRouteParamter <br />

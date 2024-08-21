@@ -6,6 +6,8 @@ import Contact from './Contact';
 import Home from './Home';
 import Error from './Error';
 import GetDynamicRouteParamter from './GetDynamicRouteParamter';
+import GetQueryParameter from './GetQueryParameter';
+import GetNavigate from './GetNavigate';
 
 const LearnRoute = () => {
   
@@ -41,6 +43,10 @@ const LearnRoute = () => {
 
           {/* only in the place of 'id1' and 'id2' there can be dynamic parameters  */}
           <Route path="/b/:id1/id/:id2" element={<GetDynamicRouteParamter></GetDynamicRouteParamter>}></Route>
+
+          <Route path="/ccc" element={<GetQueryParameter></GetQueryParameter>}></Route>
+
+          <Route path='/ddd' element={<GetNavigate></GetNavigate>}></Route>
 
 
         </Routes>
